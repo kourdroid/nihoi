@@ -1,0 +1,22 @@
+{
+  "name": "tailwindcss-rtl",
+  "version": "0.9.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/20lives/tailwindcss-rtl",
+  "scripts": {
+    "lint": "eslint ./src",
+    "build": "tailwindcss build -c src/tailwind.config.js -o dist/tailwindcss-rtl.css"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "rtl",
+    "tailwind plugin"
+  ],
+  "author": "20lives",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "tailwindcss": "^1.9.6"
+  }
+}
