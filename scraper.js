@@ -1,10 +1,10 @@
 const puppeteer = require("puppeteer");
-const fs = require("fs"); // Add this line to import the fs module
+const fs = require("fs");
 
 const baseUrl =
   "https://witanime.pics/episode/jujutsu-kaisen-2nd-season-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-";
 const totalEpisodes = 15;
-const scrapedData = {}; // Create an empty object to store the scraped data
+const scrapedData = {}; 
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -27,7 +27,7 @@ const scrapedData = {}; // Create an empty object to store the scraped data
     });
 
     const episodeKey = `Episode ${episode}`;
-    scrapedData[episodeKey] = links; // Store the links in the scrapedData object
+    scrapedData[episodeKey] = links; 
 
     console.log(`Links for Episode ${episode}:`);
     console.table(links);
